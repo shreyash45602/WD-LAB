@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekly Class Timetable</title>
+    <style>
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .break {
+            background-color: #ffeeba; /* light yellow for breaks */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Weekly Class Timetable</caption>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>09:00 - 11:00</td>
+            <td>Practical (WD)</td>
+            <td>Practical (TPMS)</td>
+            <td>Practical (JAVA)</td>
+            <td>Practical (DSL)</td>
+            <td>Practical (TTL)</td>
+        </tr>
+        <!-- Short break after 11:00 -->
+        <tr class="break">
+            <td>11:00 - 11:15</td>
+            <td colspan="5">Break</td>
+        </tr>
+        <tr>
+            <td>11:15 - 12:45</td>
+            <td>Lecture 1 (JAVA)</td>
+            <td>Lecture 1 (AT)</td>
+            <td>Lecture 1 (JAVA)</td>
+            <td>Lecture 1 (AT)</td>
+            <td rowspan="2">Practical (TTL)</td>
+        </tr>
+        <tr>
+            <td>12:15 - 01:15</td>
+            <td>Lecture 2 (MDM)</td>
+            <td>Lecture 2 (DSL)</td>
+            <td>Lecture 2 (MDM)</td>
+            <td>Lecture 2 (AT)</td>
+            <!-- Friday merged practical -->
+        </tr>
+        <!-- Lunch break -->
+        <tr class="break">
+            <td>01:15 - 02:00</td>
+            <td colspan="5">Lunch Break</td>
+        </tr>
+        <tr>
+            <td>02:00 - 03:00</td>
+            <td>Lecture 3 (DSL)</td>
+            <td>Lecture 3 (WD)</td>
+            <td>Lecture 3 (DSL)</td>
+            <td>Lecture 3 (OFF)</td>
+            <td>Lecture 3 (TPMS)</td>
+        </tr>
+        <tr>
+            <td>03:00 - 04:00</td>
+            <td>Lecture 4 (OFF)</td>
+            <td>Lecture 4 (ENV)</td>
+            <td>Lecture 4 (ENV)</td>
+            <td>Lecture 4 (OEC)</td>
+            <td>Lecture 4 (OEC)</td>
+        </tr>
+    </table>
+</body>
+</html>
